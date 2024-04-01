@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
         EditText secondNumber = (EditText)findViewById(R.id.secondNum);
         EditText outputNum = (EditText)findViewById(R.id.output);
 
-        double n1 = Integer.parseInt(firstNumber.getText().toString());
-        double n2 = Integer.parseInt(secondNumber.getText().toString());
-        double result = n1+n2;
+        int n1 = Integer.parseInt(firstNumber.getText().toString());
+        int n2 = Integer.parseInt(secondNumber.getText().toString());
+        int result = n1+n2;
 
         outputNum.setText("Total Value: "+result);
     }
@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
         EditText secondNumber = (EditText)findViewById(R.id.secondNum);
         EditText outputNum = (EditText)findViewById(R.id.output);
 
-        double n1 = Integer.parseInt(firstNumber.getText().toString());
-        double n2 = Integer.parseInt(secondNumber.getText().toString());
-        double result = n1-n2;
+        int n1 = Integer.parseInt(firstNumber.getText().toString());
+        int n2 = Integer.parseInt(secondNumber.getText().toString());
+        int result = n1-n2;
 
         outputNum.setText("Total Value: "+result);
     }
@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
         EditText secondNumber = (EditText)findViewById(R.id.secondNum);
         EditText outputNum = (EditText)findViewById(R.id.output);
 
-        double n1 = Integer.parseInt(firstNumber.getText().toString());
-        double n2 = Integer.parseInt(secondNumber.getText().toString());
-        double result = n1*n2;
+        int n1 = Integer.parseInt(firstNumber.getText().toString());
+        int n2 = Integer.parseInt(secondNumber.getText().toString());
+        int result = n1*n2;
 
         outputNum.setText("Total Value: "+result);
     }
@@ -55,10 +55,20 @@ public class MainActivity extends AppCompatActivity {
         EditText secondNumber = (EditText)findViewById(R.id.secondNum);
         EditText outputNum = (EditText)findViewById(R.id.output);
 
-        double n1 = Integer.parseInt(firstNumber.getText().toString());
-        double n2 = Integer.parseInt(secondNumber.getText().toString());
-        double result = n1/n2;
+        int n1 = Integer.parseInt(firstNumber.getText().toString());
+        int n2 = Integer.parseInt(secondNumber.getText().toString());
+        int result = n1/n2;
 
         outputNum.setText("Total Value: "+result);
+    }
+
+    public void clear(View v){
+        EditText firstNumber = (EditText)findViewById(R.id.firstNum);
+        EditText secondNumber = (EditText)findViewById(R.id.secondNum);
+        EditText outputNum = (EditText)findViewById(R.id.output);
+
+        firstNumber.setText("");
+        secondNumber.setText("");
+        outputNum.setText("");
     }
 }

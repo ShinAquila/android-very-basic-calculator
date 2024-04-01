@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp"
-        android:text="Calculator UwU"
+        android:text="Calculator"
         android:gravity="center"
         android:textSize="30sp"
         android:textStyle="bold">
@@ -80,7 +80,7 @@
 
         <Button
             android:id="@+id/addBTN"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:onClick="add"
@@ -88,7 +88,7 @@
 
         <Button
             android:id="@+id/subtractBTN"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:onClick="subtract"
@@ -96,7 +96,7 @@
 
         <Button
             android:id="@+id/multiplyBTN"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:onClick="multiply"
@@ -104,11 +104,20 @@
 
         <Button
             android:id="@+id/divideBTN"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:onClick="divide"
             android:text="DIVIDE"/>
+
+        <Button
+            android:id="@+id/clearBTN"
+            android:backgroundTint="#7A7A7A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="clear"
+            android:text="CLEAR"/>
 
     </LinearLayout>
 
